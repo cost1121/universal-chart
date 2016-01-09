@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f5175"
+    tools:context="org.fireking.universal_chart.view.fragment.RingViewFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dip"
+        android:text="RingView sample"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <org.fireking.ui_component.ringview.RingView
+        android:id="@+id/ringview1"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dip"
+        app:r_ring_duration="500" />
+
+    <org.fireking.ui_component.ringview.RingView
+        android:id="@+id/ringview2"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="45dip"
+        app:r_ring_duration="1800" />
+
+    <org.fireking.ui_component.ringview.RingView
+        android:id="@+id/ringview3"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="45dip"
+        app:r_ring_duration="1500" />
+
+    <TextView
+        android:id="@+id/reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dip"
+        android:background="#2d313c"
+        android:padding="5dip"
+        android:text="重新加载"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

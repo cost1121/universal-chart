@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import org.fireking.universal_chart.bean.CategoryBean;
+import org.fireking.universal_chart.view.fragment.RingViewFragment;
 
 import java.util.List;
 
@@ -22,6 +23,11 @@ public class MainPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        if(position == 0){
+            return RingViewFragment.newInstance();
+        }else{
+
+        }
         return null;
     }
 

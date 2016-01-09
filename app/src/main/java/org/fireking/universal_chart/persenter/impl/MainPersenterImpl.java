@@ -26,16 +26,8 @@ public class MainPersenterImpl implements IMainPersenter {
         mMainView.showLoading();
         //这里假定开启网络进行请求
         List<CategoryBean> beans = null;
-        try {
-            Thread.sleep(5000);
-            beans = mCategoryModel.getCategory();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            mMainView.showEmpty();
-            return;
-        } finally {
-            mMainView.hideLoading();
-        }
+        beans = mCategoryModel.getCategory();
+        mMainView.hideLoading();
 
         if (beans == null) {
             mMainView.showEmpty();
